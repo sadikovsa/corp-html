@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        United Corp Service
+    </title>
+    <meta name="description" content="Original Watch website">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dist/preview.jpg">
+    <link rel="preload" href="css/main.min.css" as="style">
+    <link rel="preload" href="js/app.min.js" as="script">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="/" class="logo">
+                <img src="./images/logo.png" alt="Logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <ul class="header__social">
+                    <li>
+                        <a href="#" aria-label="social">
+                            <img src="./images/icons/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="social">
+                            <img src="./images/icons/telegram.png" alt="telegram">
+                        </a>
+                    </li>
+                </ul>
+                <div class="burger mobile">
+                    <input type="checkbox" id="burgerBtn" class="burger-checkbox">
+                    <label for="burgerBtn">
+                        <div class="hamburger">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                            <span class="bar bar3"></span>
+                            <span class="bar bar4"></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<main class="main">
+<section class="hero">
+    <div class="hero__slider swiper-container">
+        <div class="swiper-wrapper">
+            <div class="hero__item swiper-slide" style="background-image: url('./images/hero/hero-slider-1.jpg')">
+                <div class="container">
+                    <h1>Промышленная покраска</h1>
+                    <p>На нашем складе всегда присутствуют основные группы товаров, а именно: компрессоры, электростанции, вибраторы глубинные и площадочные, сварочное оборудование, пневмоинструмент, промышленные пылесосы, станки, окрасочные аппараты, машины для обработки полов и т.д.</p>
+                    <button type="button" class="btn" data-toggle="modal" data-target="buyModal">Заказать</button>
+                </div>
+            </div>
+            <div class="hero__item swiper-slide" style="background-image: url('./images/hero/hero-slider-1.jpg')">
+                <div class="container">
+                    <h1>Промышленная покраска</h1>
+                    <p>На нашем складе всегда присутствуют основные группы товаров, а именно: компрессоры, электростанции, вибраторы глубинные и площадочные, сварочное оборудование, пневмоинструмент, промышленные пылесосы, станки, окрасочные аппараты, машины для обработки полов и т.д.</p>
+                    <button type="button" class="btn" data-toggle="modal" data-target="buyModal">Заказать</button>
+                </div>
+            </div>
+            <div class="hero__item swiper-slide" style="background-image: url('./images/hero/hero-slider-1.jpg')">
+                <div class="container">
+                    <h1>Промышленная покраска</h1>
+                    <p>На нашем складе всегда присутствуют основные группы товаров, а именно: компрессоры, электростанции, вибраторы глубинные и площадочные, сварочное оборудование, пневмоинструмент, промышленные пылесосы, станки, окрасочные аппараты, машины для обработки полов и т.д.</p>
+                    <button type="button" class="btn" data-toggle="modal" data-target="buyModal">Заказать</button>
+                </div>
+            </div>
+            <div class="hero__item swiper-slide" style="background-image: url('./images/hero/hero-slider-1.jpg')">
+                <div class="container">
+                    <h1>Промышленная покраска</h1>
+                    <p>На нашем складе всегда присутствуют основные группы товаров, а именно: компрессоры, электростанции, вибраторы глубинные и площадочные, сварочное оборудование, пневмоинструмент, промышленные пылесосы, станки, окрасочные аппараты, машины для обработки полов и т.д.</p>
+                    <button type="button" class="btn" data-toggle="modal" data-target="buyModal">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero__bottom">
+        <div class="container">
+            <div class="slider__controls">
+                <div class="slider__pagination">
+                    <div class="slider__number current"></div>
+                    <div class="slider__progressbar"><span></span></div>
+                    <div class="slider__number total"></div>
+                </div>
+                <div class="slider__buttons">
+                    <button type="button" class="slider__button slider__button-prev">
+                        <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.0524 0L10 0.829702L1.88406 7.99755L10 15.1703L9.0524 16L0 7.99755L9.0524 0Z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="slider__button slider__button-next">
+                        <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.947603 0L0 0.829702L8.11594 7.99755L0 15.1703L0.947603 16L10 7.99755L0.947603 0Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="container">
+
+        <div class="about__wrapper">
+            <div class="about__left">
+                <div class="title__wrapper">
+                    <h2 class="title--big">О компании</h2>
+                    <h3 class="title">О компании</h3>
+                </div>
+                <p>На нашем складе всегда присутствуют основные группы товаров, а именно: компрессоры, электростанции, вибраторы глубинные и площадочные, сварочное оборудование, пневмоинструмент, промышленные пылесосы, станки, окрасочные аппараты, машины для обработки полов и т.д.На нашем складе всегда присутствуют основные группы товаров, а именно: компрессоры, электростанции, вибраторы</p>
+            </div>
+            <ul class="about__features">
+                <li>
+                    <img src="./images/icons/calendar.svg" alt="icon">
+                    <p>
+                        <strong>Краткие сроки</strong>
+                        <span>На нашем складе всегда </span>
+                    </p>
+                </li>
+                <li>
+                    <img src="./images/icons/calendar.svg" alt="icon">
+                    <p>
+                        <strong>Краткие сроки</strong>
+                        <span>На нашем складе всегда </span>
+                    </p>
+                </li>
+                <li>
+                    <img src="./images/icons/calendar.svg" alt="icon">
+                    <p>
+                        <strong>Краткие сроки</strong>
+                        <span>На нашем складе всегда </span>
+                    </p>
+                </li>
+                <li>
+                    <img src="./images/icons/calendar.svg" alt="icon">
+                    <p>
+                        <strong>Краткие сроки</strong>
+                        <span>На нашем складе всегда </span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="services" id="services">
+    <div class="container">
+        <div class="title__wrapper">
+            <h2 class="title--big">Наши услуги</h2>
+            <h3 class="title">Наши услуги</h3>
+        </div>
+        <div class="services__list">
+            <div class="services__item" style="background-image: url('./images/services/services-1.jpg');">
+                <h4>Фасады здании</h4>
+            </div>
+            <div class="services__item" style="background-image: url('./images/services/services-2.jpg');">
+                <h4>Покраска тяжелой и легкой авто техники</h4>
+            </div>
+            <div class="services__item" style="background-image: url('./images/services/services-3.jpg');">
+                <h4>Альпинизм</h4>
+            </div>
+            <div class="services__item" style="background-image: url('./images/services/services-4.jpg');">
+                <h4>Чистка окон высотных зданий</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hww" style="background-image: url('./images/work-bg.png');">
+    <div class="container">
+        <div class="title__wrapper">
+            <h2 class="title--big">Как мы работаем?</h2>
+            <h3 class="title">Как мы работаем?</h3>
+        </div>
+        <ul class="hww__list">
+            <li class="hww__item">
+                <p class="hww__number">01</p>
+                <p class="hww__title">Выбираете</p>
+                <p class="hww__text">Выбираете материалы</p>
+            </li>
+            <li class="hww__item">
+                <p class="hww__number">02</p>
+                <p class="hww__title">Выбираете</p>
+                <p class="hww__text">Выбираете материалы</p>
+            </li>
+            <li class="hww__item">
+                <p class="hww__number">03</p>
+                <p class="hww__title">Выбираете</p>
+                <p class="hww__text">Выбираете материалы</p>
+            </li>
+            <li class="hww__item">
+                <p class="hww__number">04</p>
+                <p class="hww__title">Выбираете</p>
+                <p class="hww__text">Выбираете материалы</p>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="reviews" id="reviews">
+    <div class="container">
+        <div class="title__wrapper">
+            <h2 class="title--big">Отзывы наших клиентов</h2>
+            <h3 class="title">Отзывы наших клиентов</h3>
+        </div>
+        <div class="reviews__slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="reviews__item swiper-slide">
+                        <div class="reviews__top">
+                            <p class="reviews__author">Рустам</p>
+                            <time datetime="27.06.2021">27.06.2021</time>
+                        </div>
+                        <p class="reviews__text">На нашем складе всегда присутствуют основные группы товаров, а именно: компрессоры, электростанции, вибраторы глубинные и площадочные, сварочное оборудование, пневмоинструмент, промышленные пылесосы, станки, окрасочные аппараты, машины для обработки полов и т.д.</p>
+                </div>
+                <div class="reviews__item swiper-slide">
+                        <div class="reviews__top">
+                            <p class="reviews__author">Рустам</p>
+                            <time datetime="27.06.2021">27.06.2021</time>
+                        </div>
+                        <p class="reviews__text">На нашем складе всегда присутствуют основные группы товаров, а именно: компрессоры, электростанции, вибраторы глубинные и площадочные, сварочное оборудование, пневмоинструмент, промышленные пылесосы, станки, окрасочные аппараты, машины для обработки полов и т.д.</p>
+                </div>
+                <div class="reviews__item swiper-slide">
+                        <div class="reviews__top">
+                            <p class="reviews__author">Рустам</p>
+                            <time datetime="27.06.2021">27.06.2021</time>
+                        </div>
+                        <p class="reviews__text">На нашем складе всегда присутствуют основные группы товаров, а именно: компрессоры, электростанции, вибраторы глубинные и площадочные, сварочное оборудование, пневмоинструмент, промышленные пылесосы, станки, окрасочные аппараты, машины для обработки полов и т.д.</p>
+                </div>
+                <div class="reviews__item swiper-slide">
+                        <div class="reviews__top">
+                            <p class="reviews__author">Рустам</p>
+                            <time datetime="27.06.2021">27.06.2021</time>
+                        </div>
+                        <p class="reviews__text">На нашем складе всегда присутствуют основные группы товаров, а именно: компрессоры, электростанции, вибраторы глубинные и площадочные, сварочное оборудование, пневмоинструмент, промышленные пылесосы, станки, окрасочные аппараты, машины для обработки полов и т.д.</p>
+                </div>
+                <div class="reviews__item swiper-slide">
+                        <div class="reviews__top">
+                            <p class="reviews__author">Рустам</p>
+                            <time datetime="27.06.2021">27.06.2021</time>
+                        </div>
+                        <p class="reviews__text">На нашем складе всегда присутствуют основные группы товаров, а именно: компрессоры, электростанции, вибраторы глубинные и площадочные, сварочное оборудование, пневмоинструмент, промышленные пылесосы, станки, окрасочные аппараты, машины для обработки полов и т.д.</p>
+                </div>
+            </div>
+        </div>
+        <div class="reviews__bottom">
+            <div class="container">
+                <div class="slider__controls">
+                    <div class="slider__pagination slider__pagination--dark">
+                        <div class="slider__number current"></div>
+                        <div class="slider__progressbar"><span></span></div>
+                        <div class="slider__number total"></div>
+                    </div>
+                    <div class="slider__buttons">
+                        <button type="button" class="slider__button slider__button--dark slider__button-prev">
+                            <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.0524 0L10 0.829702L1.88406 7.99755L10 15.1703L9.0524 16L0 7.99755L9.0524 0Z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="slider__button slider__button--dark slider__button-next">
+                            <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.947603 0L0 0.829702L8.11594 7.99755L0 15.1703L0.947603 16L10 7.99755L0.947603 0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="title__wrapper">
+            <h2 class="title--big">Контактная информация</h2>
+            <h1 class="title">Контактная информация</h1>
+        </div>
+        <div class="contacts__content">
+            <div id="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8f22de1beaf22412eafa95a3a57d7c4de57b46c6f3d77cbada2d4a53553ab7f5&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+            <div class="contacts__block">
+                <h3 class="contacts__title">Свяжитесь с нами любым удобным вам способом:</h3>
+                <p class="contacts__subtitle">г. Ташкент</p>
+                <p class="contacts__text">ул. Руставелли д.7</p>
+
+                <p class="contacts__subtitle">Часы работы</p>
+                <p class="contacts__text">с 10:00 до 19:00</p>
+
+                <a href="#" class="contacts__subtitle">957-32-41</a>
+                <p class="contacts__text">Наш номер</p>
+                <form action="#" class="contacts__form">
+                    <h3>Или закажите звонок:</h3>
+                    <label for="name">
+                        <input type="text" class="contacts__field" id="name" name="your-name" placeholder="Ваше имя">
+                    </label>
+                    <label for="phone">
+                        <input type="text" class="contacts__field phone" id="phone" name="your-phone" placeholder="Номер телефона">
+                    </label>
+                    <input type="submit" class="btn" value="Оставить заявку">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <a href="./" class="footer__logo">
+                <img src="./images/logo.png" alt="Logo">
+            </a>
+            <ul class="footer__menu">
+                <li><a href="#">Навигация</a></li>
+                <li><a href="#">Навигация</a></li>
+                <li><a href="#">Навигация</a></li>
+            </ul>
+            <div class="footer__right">
+                <a href="tel:++99 8 (90)957-32-41" class="footer__phone">+99 8 (90)957-32-41</a>
+                <a href="#" class="footer__policy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal" id="buyModal">
+    <button class="modal__close" type="button" aria-label="close modal">
+        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <rect width="1.86888" height="26.1643" transform="matrix(0.700716 0.71344 -0.700716 0.71344 18.6436 0)" />
+            <rect width="1.86888" height="26.1643" transform="matrix(-0.700716 0.71344 0.700716 0.71344 1.30957 0)" />
+        </svg>
+
+    </button>
+    <div class="modal__wrapper">
+        <div class="modal__left">
+            <p class="modal__img">
+                <img src="./images/catalog/catalog-1.png" alt="catalog">
+            </p>
+            <p class="modal__brand">ROLEX</p>
+            <p class="modal__title">ROLEX DATEJUST 31 OYSTER</p>
+            <p class="modal__price">7000$</p>
+        </div>
+        <div class="modal__right">
+            <form class="modal__form">
+                <p class="modal__text">Связаться для покупки</p>
+                <label for="modalname" class="modal__form-label">
+                    <input type="text" id="modalname" name="name" class="modal__form-field" placeholder="Ваше имя" required>
+                </label>
+                <label for="modalphone" class="modal__form-label">
+
+                    <input type="text" id="modalphone" name="phone" class="modal__form-field phone" placeholder="Ваша номер телефона" required>
+                </label>
+                <button type="submit" class="link">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="backdrop"></div>
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
