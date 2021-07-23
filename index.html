@@ -353,34 +353,29 @@
 </footer>
 <div class="modal" id="buyModal">
     <button class="modal__close" type="button" aria-label="close modal">
-        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <rect width="1.86888" height="26.1643" transform="matrix(0.700716 0.71344 -0.700716 0.71344 18.6436 0)" />
-            <rect width="1.86888" height="26.1643" transform="matrix(-0.700716 0.71344 0.700716 0.71344 1.30957 0)" />
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.9979 0C5.37157 0 0 5.37329 0 12.0004C0 18.6267 5.37157 24 11.9979 24C18.6276 24 24 18.6259 24 12.0004C24 5.37329 18.6276 0 11.9979 0ZM17.1574 15.2496L15.2462 17.1583C15.2462 17.1583 12.2227 13.9142 11.997 13.9142C11.7747 13.9142 8.75037 17.1583 8.75037 17.1583L6.83826 15.2496C6.83826 15.2496 10.0857 12.2699 10.0857 12.0047C10.0857 11.7352 6.83826 8.75466 6.83826 8.75466L8.75037 6.8417C8.75037 6.8417 11.7996 10.0875 11.997 10.0875C12.1961 10.0875 15.2462 6.8417 15.2462 6.8417L17.1574 8.75466C17.1574 8.75466 13.9091 11.7782 13.9091 12.0047C13.9091 12.2201 17.1574 15.2496 17.1574 15.2496Z" fill="#125A8F" />
         </svg>
 
     </button>
     <div class="modal__wrapper">
-        <div class="modal__left">
-            <p class="modal__img">
-                <img src="./images/catalog/catalog-1.png" alt="catalog">
-            </p>
-            <p class="modal__brand">ROLEX</p>
-            <p class="modal__title">ROLEX DATEJUST 31 OYSTER</p>
-            <p class="modal__price">7000$</p>
-        </div>
-        <div class="modal__right">
-            <form class="modal__form">
-                <p class="modal__text">Связаться для покупки</p>
-                <label for="modalname" class="modal__form-label">
-                    <input type="text" id="modalname" name="name" class="modal__form-field" placeholder="Ваше имя" required>
-                </label>
-                <label for="modalphone" class="modal__form-label">
-
-                    <input type="text" id="modalphone" name="phone" class="modal__form-field phone" placeholder="Ваша номер телефона" required>
-                </label>
-                <button type="submit" class="link">Отправить</button>
-            </form>
-        </div>
+        <form action="#" class="modal__form">
+            <h2 class="modal__title">Заказать покраску</h2>
+            <p class="modal__text">Наш эксперт перезвонит Вам
+                в течение 15 минут, проконсультирует
+                и подберет подходящего вам специалиста!</p>
+            <label for="modalname" class="modal__form-label">
+                <input type="text" class="modal__form-input" name="your-name" id="modalname" placeholder="Ваше имя" required>
+            </label>
+            <label for="modalphone" class="modal__form-label">
+                <input type="text" class="modal__form-input phone" name="your-phone" id="modalphone" placeholder="Номер телефона" required>
+            </label>
+            <input type="submit" class="btn" value="Оставить заявку">
+            <p class="modal__desc">Нажимая кнопку «Отправить», вы соглашаетесь
+                на обработку персональных данных
+                и подтверждаете своё совершеннолетие
+                в соответствии с условиями.</p>
+        </form>
     </div>
 </div>
 <div class="backdrop"></div>
